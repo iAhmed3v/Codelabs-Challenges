@@ -4,45 +4,56 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/toast_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_alignParentStart="true"
-        android:text="@string/toast_btn_text" />
-
     <TextView
-        android:id="@+id/count_text_view"
-        android:layout_width="393dp"
-        android:layout_height="319dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:layout_below="@id/toast_btn"
-        android:layout_alignParentStart="true"
-        android:background="@color/purple_200"
-        android:gravity="center_horizontal|center_vertical"
-        android:text="@string/count_initial_value"
-        android:textColor="@color/white"
-        android:textSize="150sp" />
-
-    <Button
-        android:id="@+id/count_btn"
+        android:id="@+id/article_heading_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/count_text_view"
-        android:text="@string/count_btn_text" />
+        android:background="@color/purple_200"
+        android:padding="10dp"
+        android:text="@string/article_title_text"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
 
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/article_heading_text_view">
 
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/article_subheading_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/article_sub_heading_text"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/article_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:lineSpacingExtra="5sp"
+                android:padding="10dp"
+                android:text="@string/article_text"
+                android:textColor="@color/black"
+                android:textColorLink="@color/purple_200" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+    </ScrollView>
 </RelativeLayout>

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Codelabs Test</string>
+    <string name="app_name">Activities and Intents</string>
     <string name="toast_btn_text">Toast</string>
     <string name="count_initial_value">0</string>
     <string name="count_btn_text">Count</string>
@@ -26,4 +26,9 @@ This volume starts with the first new Beatle song, “Free as a Bird” (based o
 \n\n
 <b><i>One After 909</i></b> — A song recorded for the <i>Let It Be</i> album was actually worked on way back in the beginning, six years earlier. This take shows how they did it much more slowly, with an R&amp;B feel to it.
     </string>
+    <string name="main_btn_text">send</string>
+    <string name="header_text">Message Receiver</string>
+    <string name="edit_text_hint">Enter Your Message Here</string>
+    <string name="reply_hint">Enter your Reply Here</string>
+    <string name="reply_btn_text">reply</string>
 </resources>

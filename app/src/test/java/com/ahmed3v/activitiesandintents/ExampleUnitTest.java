@@ -1,4 +1,4 @@
-package com.ahmed3v.codelabstest;
+package com.ahmed3v.activitiesandintents;
 
 import org.junit.Test;
 
